@@ -28,7 +28,7 @@ jobs:
         uses: actions/github-script@v7
         with:
           script: |
-            const i = github.context.payload.inputs;
+            const i = context.payload.inputs;
             const conclusion = i.verdict === 'success' ? 'success' : 'failure';
             await github.rest.checks.create({
               owner: context.repo.owner,
