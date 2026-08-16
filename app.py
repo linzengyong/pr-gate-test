@@ -1,2 +1,2 @@
 import os
-api_key = 'sk-1234567890abcdef'  # ²âÊÔÓ²±àÂëÃÜÔ¿
+api_key = os.environ.get('API_KEY')
